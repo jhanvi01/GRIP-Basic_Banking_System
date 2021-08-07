@@ -1,0 +1,28 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.1.0/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-KyZXEAg3QhqLMpG8r+8fhAXLRk2vvoC2f3B09zVXn8CA5QIVfZOJ3BCsw2P0p/We" crossorigin="anonymous">
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.1.0/dist/js/bootstrap.bundle.min.js" integrity="sha384-U1DAWAznBHeqEIlVSCgzq+c9gqGAJn5c/t99JyeKa9xxaYpSvHU5awsuZVVFIhvj" crossorigin="anonymous"></script>
+    <title>GRIP-Bank System</title>
+</head>
+<body>
+    <h1 class="my-5 text-center">Customers Info</h1>
+<div class="text-center col-7 container">
+
+    
+        Name:<input class="mb-5 form-control" type="text" value="{{customer.name}}" aria-label="Disabled input example" disabled readonly>
+        Email:<input class="mb-5 form-control" type="text" value="{{customer.email}}" aria-label="Disabled input example" disabled readonly>
+        Contact:<input class="mb-5 form-control" type="text" value="{{customer.phone}}" aria-label="Disabled input example" disabled readonly>
+        City:<input class="mb-5 form-control" type="text" value="{{customer.city}}" aria-label="Disabled input example" disabled readonly>
+        Balance:<input class="mb-5 form-control" type="text" value="{{customer.current_balance}}" aria-label="Disabled input example" disabled readonly>
+        <a type="submit" name="Transact" class="btn btn-primary" href='/?id1={{customer.id}}'>Transact</a>
+        <a type="button" name="back" class="btn btn-secondary" href="/">Back</a>
+
+    
+</div>
+
+</body>
+</html>
